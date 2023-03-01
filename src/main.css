@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* // encapisular as tagas e também extender sem se importar com ordem a ordem => =>  */
+
+@layer components {
+  .alura-input {
+    @apply py-1 pl-5 dark:bg-dark-200 rounded-full w-full max-w-lg outline-none text-dark-100 dark:text-gray-200 placeholder:text-gray-500 placeholder:font-bold placeholder:text-xs placeholder:uppercase focus:border-alura-200 focus:border-2 dark:focus:border-alura-100;
+  }
+
+  .alura-button {
+    @apply bg-alura-100 px-5 py-2 text-gray-200 uppercase rounded-full hover:animate-pulse outline-none focus:shadow-md focus:shadow-gray-500 hover:dark:shadow-black hover:-translate-y-1 hover:delay-200;
+  }
+}
